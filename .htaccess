@@ -1,0 +1,30 @@
+RewriteEngine On
+RewriteBase /game_zone/
+RewriteRule ^deconnexion$ index.php?action=deconnexion [NC,L,QSA]
+#RewriteRule ^inscription-success$ index.php?page=inscription-success [NC,L,QSA]
+RewriteRule ^admin/gestion-commandes/([a-zA-Z0-9_-]+)\/?$ index.php?admin=gestion-commandes&num_commande=$1 [NC,L,QSA]
+RewriteRule ^admin/([a-zA-Z0-9_-]+)\/?$ index.php?admin=$1 [NC,L,QSA]
+RewriteRule ^admin/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)\/?$ index.php?admin=$1&action=$2 [NC,L,QSA]
+RewriteRule ^admin/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)\/?$ index.php?admin=$1&action=$2&product=$3 [NC,L,QSA]
+RewriteRule ^([a-zA-Z0-9_-]+)\/?$ index.php?page=$1 [NC,L,QSA]
+
+#gestion des $_GET
+
+RewriteRule ^profil/([a-zA-Z0-9_-]+)$ index.php?page=profil&action=$1 [NC,L,QSA]
+RewriteRule ^profil/detail-commande/([0-9]+)$ index.php?page=profil&action=detail-commande&num_commande=$1 [NC,L,QSA]
+
+#fin gestion des $_GET
+
+RewriteRule ^pc-gaming$ index.php?page=pc-gaming [NC,L,QSA]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)\/?$ index.php?page=$1&cat=$2 [NC,L,QSA]
+RewriteRule ^pc-gaming/([a-zA-Z0-9_-]+)\/?$ index.php?page=pc-gaming&cat=$2 [NC,L,QSA]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/p-([0-9]+)\/?$ index.php?page=$1&cat=$2&p=p-$3 [NC,L,QSA]
+RewriteRule ^pc-gaming/([a-zA-Z0-9_-]+)/p-([0-9]+)\/?$ index.php?page=pc-gaming&cat=$2&p=p-$3 [NC,L,QSA]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([0-9]+)\/?$ index.php?page=$1&cat=$2&product=$3 [NC,L,QSA]
+RewriteRule ^pc-gaming/([a-zA-Z0-9_-]+)/([0-9]+)\/?$ index.php?page=pc-gaming&cat=$2&product=$3 [NC,L,QSA]
+
+#urlrewrite à prevoir => pour la ligne du dessus( et plus généralement pour les produits)
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([0-9]+)-([a-zA-Z0-9-]+)\/?$ index.php?page=$1&cat=$2&product=$3&titre=$4 [NC,L,QSA]
+RewriteRule ^pc-gaming/([a-zA-Z0-9_-]+)/([0-9]+)-([a-zA-Z0-9-]+)\/?$ index.php?page=pc-gaming&cat=$2&product=$3&titre=$4 [NC,L,QSA]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([0-9]+)-([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)\/?$ index.php?page=$1&cat=$2&product=$3&titre=$4&comment=$5 [NC,L,QSA]
+RewriteRule ^pc-gaming/([a-zA-Z0-9_-]+)/([0-9]+)-([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)\/?$ index.php?page=pc-gaming&cat=$2&product=$3&titre=$4&comment=$5 [NC,L,QSA]
