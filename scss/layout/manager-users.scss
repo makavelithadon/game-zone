@@ -1,0 +1,48 @@
+/*  PAGE GESTION DES MEMBRES  */
+
+.list-users, .list-produits {
+    color: #3d3d3d;
+    margin: 15px auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.user-trash, .product-trash, .btn-signup.delete {
+    background: #F74444!important;
+    font-size: 1em!important;
+}
+.btn-signup.delete {
+    width: 140px;
+}
+input[readonly] {
+    background: #f74444;
+    cursor: not-allowed;
+}
+.product-modif {
+    display: block;
+    padding: 2px 18px;
+    margin: 18px auto 15px auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .75em;
+    font-weight: 400;
+    border: 1px solid transparent;
+    outline: 0;
+    outline-offset: 0;
+    color: #fefefe;
+    border-radius: 4px;
+    box-shadow: 0 0 .1em #3d3d3d;
+    background: #0085b2;
+}
+.user-trash:hover, .product-trash:hover {
+    background: linear-gradient(to bottom, #F74444, red)!important;
+}
+.product-modif {
+    font-size: 1.2em!important;
+}
+.choice {
+    text-align: center;
+    padding: 50px 15px;
+}
+.choice a:first-child {
+    margin-right: 50px;
+}
+/*  FIN PAGE GESTION DES MEMBRES  */

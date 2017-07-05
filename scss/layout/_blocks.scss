@@ -1,0 +1,269 @@
+.container-block-news {
+    float: left;
+    width: 458px;
+    height: 458px;
+}
+.container-block-news:first-child {
+    margin-right: 14px;
+}
+.block-one {
+	margin-right: 14px;
+}
+.block {
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 0 .05em .035em #c2c2c2;
+    -webkit-transition: box-shadow .3s;
+            transition: box-shadow .3s;
+}
+.block-big {
+    height: 458px;
+}
+.block-large {
+    height: 222px;
+    margin-bottom: 14px;
+}
+.block-square {
+    float: left;
+    width: 222px;
+    height: 222px;
+}
+.block-big .news-block-1 {
+    height: 412px;
+    background: #fff;
+}
+.block-large .news-block-1, .block-square .news-block-1 {
+    height: 176px;
+    background: #fff;
+}
+.news-block-2 {
+    height: 46px;
+    position: relative;
+    box-sizing: border-box;
+    border-top: 1px solid #cbcbcb;
+    background: linear-gradient(to bottom, rgb(249, 251, 252), #c2c0c0);
+            transition: background .6s;
+}
+
+/*  BLOCK CONTENT  */
+
+
+.news-logo, .marque {
+    text-align: right;
+    color: #999;
+    font-family: 'Montserrat', sans-serif;
+}
+.block-big .news-logo {
+    height: 44px;
+    line-height: 42px;
+    font-size: .9em;
+    padding: 0 35px;
+}
+.block-large .news-logo {
+    height: 37px;
+    line-height: 36px;
+    font-size: .8em;
+    padding: 0 20px;
+}
+.block-square .news-logo {
+    height: 24px;
+    line-height: 23px;
+    font-size: .65em;
+    padding: 0 18px;
+}
+.news-titre, .titre-product {
+    color: #3d3d3d;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+.titre-product {
+    margin: 8px 0 20px 0;
+}
+.block-big .news-titre {
+    line-height: 30px;
+    padding: 0 25px;
+    font-size: 1em;
+    max-height: 60px;
+}
+.block-large .news-titre {
+    line-height: 20px;
+    padding: 0 18px;
+    font-size: .85em;
+    max-height: 40px;
+}
+.block-square .news-titre {
+    line-height: 14px;
+    padding: 0 12px;
+    font-size: .7em;
+    max-height: 28px;
+}
+.block-square .news-img, .products .img {
+    margin: 8px auto 8px auto;
+    width: 200px;
+    height: 108px;
+    background-size: auto 98%!important;
+}
+.block-square .news-img {
+    /*background: url('../img/pack-xbox-one-fifa-15.jpg') no-repeat center;*/
+}
+
+/*  BLOCK-LARGE SPEC  */
+
+.news-img-desc {
+    max-height: 119px;
+    min-height: 99px;
+}
+.block-large .news-img, .block-large .news-desc {
+    float: left;
+    max-height: 119px;
+    min-height: 99px;
+}
+.block-large .news-img {
+    width: 180px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: url('../img/pack-ps4-500-go-jeu-the-last-of-us-remastered.png') no-repeat center;
+    background-size: auto 100%;
+}
+.block-large .news-desc {
+    width: 258px;
+    display: flex;
+}
+.block-large .news-desc p {
+    padding: 0 30px 5px 0;
+    text-align: justify;
+    font-size: .85em;
+}
+
+/*  FIN BLOCK-LARGE SPEC  */
+
+
+.news-desc p {
+    font-family: 'Open sans', sans-serif;
+    color: #3d3d3d;
+    margin: auto;
+}
+.block-big .news-img {
+    width: 400px;
+    margin: 0 auto;
+    max-height: 250px;
+    min-height: 220px;
+    /*background: url('../img/pack-xbox-one-fifa-15.jpg') no-repeat center;*/
+    background-size: auto 94%;
+}
+.block-big .news-desc {
+    height: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+}
+.block-big .news-desc p {
+    font-size: .9em;
+    text-align: center;
+    padding: 0 30px;
+}
+
+/*  FIN BLOCK CONTENT  */
+
+.block:hover .price {
+    text-shadow: 1px 1px #000;
+}
+
+/*  PAGE PRODUCTS  */
+.block-price {
+    position: relative;
+}
+.block-price .price span {
+    font-size: .7em;
+    display: inline-block;
+    top: 10px;
+    position: absolute;
+}
+.products .news-titre{
+    height: 25px!important;
+}
+
+.block:hover .news-block-2 {
+    background: #535862;
+}
+.block:not(.main-block):hover {
+    box-shadow: 1px 1px .5em .1em #565656;
+}
+.block .left, .block .right {
+    float: left;
+    width: 50%;
+    height: inherit;
+}
+.block-price {
+    width: 110px;
+    height: inherit;
+    float: right;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+.container-products {
+    width: 930px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.products {
+    background: #fefefe;
+    margin-bottom: 10px;
+    display: inline-block;
+    float: none;
+}
+.container-products a:not(:nth-child(4n+4)) .products {
+    margin-right: 14px;
+}
+.price {
+    width: 90px;
+    height: 25px;
+    margin: auto;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    color: #3d3d3d;
+    text-align: center;
+    line-height: 24px;
+    border: 1px solid #999;
+    background: #fefefe;
+    border-radius: 4px;
+    font-size: .92em;
+    -webkit-transition: all .25s, color .15s, border .15s;
+            transition: all .25s, color .15s, border .15s;
+}
+.block:hover .price {
+    color: #fff;
+    background: linear-gradient(to bottom, #ffa500, #FF7F02);
+    border: 1px solid #fefefe;
+}
+.block-big:hover .block-hover, .block-large:hover .block-hover {
+    opacity: 1;
+    -webkit-transform: translateX(348px);
+        -ms-transform: translateX(348px);
+            transform: translateX(348px);
+    -webkit-transition: opacity 1.5s, -webkit-transform .5s;
+            transition: opacity 1.5s, transform .5s;
+}
+.block-square:hover .block-hover {
+  opacity: 1;
+  -webkit-transform: translateX(112px);
+      -ms-transform: translateX(112px);
+          transform: translateX(112px);
+  -webkit-transition: opacity 1.5s, -webkit-transform .5s;
+          transition: opacity 1.5s, transform .5s;
+}
+.block-hover {
+  position: absolute;
+  z-index: 9;
+  background: #323844;
+  height: inherit;
+  width: 100%;
+  opacity: 0;
+}

@@ -1,0 +1,31 @@
+/*  PAGINATION  */
+
+.pagination > ul > li {
+    margin: 0 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 .1em #000;
+    box-sizing: border-box;
+    background: #fefefe;
+    transition: all .35s, background .6s;
+}
+.pagination > ul > li.active, .pagination > ul > li:hover {
+    background: linear-gradient(to bottom, #ffa500, #FF7F02);
+    box-shadow: 1px 1px .03em .005em #565656;
+    transition: all .35s, background .6s;
+}
+.pagination > ul > li > a {
+    color: #3d3d3d;
+    transition: all .35s, background .6s;
+    padding: 1px 15px;
+}
+.pagination > ul > li.active a:hover, .pagination > ul > li:hover a {
+    color: #fff!important;
+    transition: all .35s;
+}
+.pagination > ul > li.active a {
+    color: #fff!important;
+    transition: all .35s;
+    cursor: default;
+}
+
+/*  FIN PAGINATION  */

@@ -1,0 +1,78 @@
+#sectionTop {
+    height: 285px;
+    background: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+}
+#sectionTop + div{
+	display: none!important;
+	width: 0!important;
+	visibility: hidden!important;
+}
+.bandeau-sectionTop {
+  width: 960px;
+  margin: 0 auto;
+}
+#maskSection {
+    background: #e0e9f9;
+}
+#mainSection {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    background: url('../img/witcher5.png') no-repeat top center #e0e9f9;
+}
+#sectionBody {
+    box-sizing: border-box;
+    min-height: 494px;
+}
+#container {
+    width: 960px;
+    margin: 0 auto 50px auto;
+    box-sizing: border-box;
+}
+.container-news {
+    width: 930px;
+    height: 512px;
+    margin: 0 auto 42px auto;
+}
+.titre-en-tete, .block-titre-principal, .titre-products {
+    height: 40px;
+    margin-bottom: 14px;
+    padding-left: 55px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 40px;
+    color: #fff;
+    background: linear-gradient(to bottom, #0085b2, #056383);
+    box-shadow: 0 0 .1em #000;
+}
+.titre-products {
+    width: 930px;
+    box-sizing: border-box;
+    margin: 0 auto 14px auto;
+}
+.block-titre-principal {
+  background: linear-gradient(to bottom, #ffa500, #FF7F02);
+  box-sizing: border-box;
+  margin: 0 auto 14px auto;
+  width: 930px;
+}
+.main-block {
+    width: 930px;
+    margin: 0 auto;
+    background: #fefefe;
+    padding: 20px 0;
+}
+.main-block.product-block {
+    height: 250px;
+    margin-bottom: 15px;
+    opacity: .95;
+    -webkit-transition: box-shadow .25s;
+            transition: box-shadow .25s;
+}
+.main-block.product-block:hover {
+    opacity: 1;
+    box-shadow: 0 0 .3em #3d3d3d;
+}
+.news {
+    height: 458px;
+}

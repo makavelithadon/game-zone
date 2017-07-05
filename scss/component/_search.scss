@@ -1,0 +1,68 @@
+.search-container {
+    width: 930px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    height: 35px;
+    position: relative;
+}
+.search-block {
+    float: right;
+    display: block;
+    width: 500px;
+    box-sizing: border-box;
+    height: 35px;
+    background: grey;
+    box-shadow: 0 0 .1em #000;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.form-search {
+    height: inherit!important;
+}
+.form-search input {
+    height: inherit!important;
+    display: inline-block!important;
+    box-sizing: border-box!important;
+    vertical-align: middle!important;
+    border-radius: 0!important;
+    text-align: left!important;
+    padding-left: 15px!important;
+}
+#searchInput {
+    width: 91%;
+    border-radius: 4px 0 0 4px!important;
+}
+#searchSubmit {
+    width: 9%;
+    margin:0;
+    border-radius: 0 4px 4px 0!important;
+    box-shadow: none!important;
+    background: url('/game_zone/img/loupe.svg') no-repeat center 50% / 55% #0085B2;
+}
+#searchResults {
+    position: absolute;
+    right: 0;
+    z-index: 10000;
+    display: none;
+    width: 500px;
+    min-height: 40px;
+    background: #fff;
+    box-sizing: border-box;
+    border: 2px solid #FFA500;
+}
+#tableResults {
+    width: 100%;
+}
+#tableResults td {
+    font-size: .75em;
+    font-family: 'Montserrat', sans-serif;
+    color: #3d3d3d;
+    padding: 15px 15px;
+}
+#tableResults tr:hover {
+    cursor: pointer;
+    background: #dad9d9;
+}
+#tableResults tr:hover td {
+    color: #fff;
+}

@@ -1,0 +1,41 @@
+/*******    BREADCRUMB    *******/
+
+.user, .panier {
+    width: 50%;
+    padding: 65px 10px 15px 10px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    color: #323844;
+    float: left;
+}
+.user span a, .user span {
+    font-family: montserrat,sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px .05em #323844;
+}
+.panier {
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    padding: 65px 25px 15px 10px;
+}
+.panier a {
+    font-size: .9em;
+    font-family: 'Open Sans',sans-serif;
+}
+.panier a .span-1 {
+  display: inline-block;
+  width: 40px;
+  position: relative;
+  top: 6px;
+  margin-right: 8px;
+  height: 40px;
+  background: url(../img/panier.png) no-repeat center;
+  background-size: 100%;
+}
+#numPanier {
+    color: #323844;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*******    FIN BREADCRUMB    *******/

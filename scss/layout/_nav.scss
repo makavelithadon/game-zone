@@ -1,0 +1,67 @@
+/*******    NAV    *******/
+
+nav {
+    width: 100%;
+    height: inherit;
+}
+nav > ul {
+    text-align: center;
+    height: inherit;
+}
+nav > ul > li {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    border-top: none;
+    position: relative;
+}
+nav > ul > li > ul {
+    text-align: center;
+    border-top: 0;
+    display: none;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(249, 251, 252), #c2c0c0);
+    box-shadow: 0 2px 0.2em #454444;
+    position: absolute;
+    z-index: 500;
+}
+nav > ul > li > ul > li {
+    box-sizing: border-box;
+}
+nav > ul > li:hover, nav > ul > li.active {
+    background: linear-gradient(to bottom, rgb(249, 251, 252), #c2c0c0);
+    border-top: none;
+}
+nav > ul > li:hover > a, nav > ul > li.active a {
+    color: #3d3d3d;
+}
+nav > ul > li:hover > ul {
+    display: block;
+}
+nav > ul > li > a, nav > ul > li > ul > li > a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .85em;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 39px;
+    padding: 0 23px;
+}
+nav > ul > li > ul > li > a {
+    font-size: .6em;
+    color: #3d3d3d;
+    padding: 0 15px;
+    -webkit-transition: all .1s;
+            transition: all .1s;
+    border-top: 1px solid #c2c0c0;
+}
+nav > ul > li > ul > li:hover {
+
+}
+nav > ul > li > ul > li:hover a {
+    color: #fefefe;
+    background: linear-gradient(to bottom, #0085b2, #056383);
+}
+
+/*******    FIN NAV    *******/

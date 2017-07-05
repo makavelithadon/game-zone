@@ -1,0 +1,289 @@
+/*  PAGE PRODUCT_DETAILS  */
+
+.product-details-container {
+    width: 930px;
+    margin: 0 auto;
+}
+.product-details-block.block-left, .product-details-block.block-right {
+    float: left;
+    height: 350px;
+    box-sizing: border-box;
+}
+.product-details-block.block-left {
+    width: 400px;
+    padding-right: 7px;
+}
+.product-details-block.block-right {
+    width: 530px;
+    padding-left: 7px;
+}
+.container-img, .container-desc, .product-details-block.large {
+    background: #fefefe;
+}
+.container-img {
+    height: 256px;
+    margin-bottom: 14px;
+    box-shadow: 0 0 .05em .035em #c2c2c2;
+    -webkit-transition: box-shadow .3s;
+    transition: box-shadow .3s;
+    background-size: 55%!important;
+    position: relative;
+}
+.container-img:hover {
+    box-shadow: 1px 1px 1em #999;
+    cursor: pointer;
+}
+.container-tinys-img {
+    height: 80px;
+}
+.container-desc {
+    height: inherit;
+    position: relative;
+    box-shadow: 0 0 .05em .035em #c2c2c2;
+}
+.product-details-block.large {
+    min-height: 100px;
+    box-shadow: 0 0 .05em .035em #c2c2c2;
+    margin: 14px auto 14px auto;
+    padding: 0 55px;
+    font-family: 'Montserrat', sans-serif;
+}
+.product-details-block.large.desc-detail {
+    padding: 20px 55px;
+}
+.product-details-block.large h2 {
+    color: #3d3d3d;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 25px;
+}
+.product-details-block.large p {
+    font-weight: 300;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: justify;
+    line-height: 23px;
+    font-size: .94em;
+}
+.product-details-block.large.video {
+    min-height: 450px;
+}
+.block-avis {
+    min-height: 150px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.avis-l, .avis-r {
+    display: inline-block;
+    min-height: 150px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.avis-l {
+    width: 199px;
+}
+.avis-c {
+    width: 1px;
+    height: 100px;
+    vertical-align: middle;
+    display: inline-block;
+    background: grey;
+    box-shadow: 2px 1px 0.8em #3d3d3d;
+}
+.avis-r {
+    width: 620px;
+}
+.block-avis h4 {
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 1px;
+}
+.block-avis h5 {
+    text-align: center;
+    margin-top:10px;
+    font-size:.85em;
+    color: #b8b8b8;
+}
+.avis-r .content {
+    display: flex;
+    min-height: 150px;
+}
+.avis-r p {
+    width: 80%;
+    min-height: 1px;
+    margin: auto;
+}
+.block-avis h6 {
+    text-align: center;
+    margin-top:14px;
+    font-size:.7em;
+    color: #3d3d3d;
+}
+.etoiles-container.avis {
+    margin-left: 12px;
+    margin-top: 7px;
+}
+.product-details-block.large .block-avis:not(:last-child) {
+    border-bottom: 1px solid #999;
+}
+.marque {
+    line-height: 40px;
+    height: 40px;
+    padding: 0px 15px;
+    font-size: .9em;
+}
+.tinys-img-1, .tinys-img-2, .tinys-img-3 {
+    float: left;
+    height: inherit;
+    width: 123px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    box-shadow: 0 0 .05em .035em #c2c2c2;
+    background: #fefefe;
+    -webkit-transition: box-shadow .3s, border .35s;
+    transition: box-shadow .3s, border .35s;
+    background-size: 50%!important;
+}
+.tinys-img-1, .tinys-img-2 {
+    margin-right: 12px;
+}
+.tinys-img-1 {
+    border: 1px solid rgb(0, 133, 178);
+}
+.tinys-img-1:hover, .tinys-img-2:hover, .tinys-img-3:hover {
+    box-shadow: 0 0 .3em #3d3d3d;
+    border: 1px solid rgb(0, 133, 178)!important;
+    cursor: pointer;
+}
+.parag {
+    font-size: .9em;
+    text-align: left;
+    padding: 0 30px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
+}
+.etoiles-container {
+    display:inline-block;
+    height: 20px;
+    padding-left: 25px;
+    position: relative;
+    width: 120px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.etoiles-avis {
+    display:inline-block;
+    padding-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8em;
+    color: #908e8e;
+    vertical-align: middle;
+}
+.etoiles-avis span a {
+    color: #908e8e;
+    transition: color .35s;
+}
+.etoiles-avis span a:hover {
+    color: #0085b2;
+}
+.mask-etoiles, .mask-etoiles-grey, .etoiles-content {
+    position: absolute;
+    width: 120px;
+    height: inherit;
+
+}
+.etoiles-content {
+    z-index: 10;
+    background: #fefefe;
+    background: url('../img/etoiles.svg') no-repeat left;
+    background-size: 100%;
+}
+.mask-etoiles {
+    background: #FFD000;
+    z-index: 9;
+    transition: width 1.5s;
+    left: 28px;
+    width: 116px;
+}
+.mask-etoiles-grey {
+    background: #D8D8D8;
+    z-index: 5;
+    left: 28px;
+    width: 116px;
+}
+.descr-prod {
+    padding: 6px 30px;
+    margin-top: 20px;
+    font-size: .9em;
+    font-family: roboto condensed, sans-serif;
+}
+.block-buy {
+    width: 480px;
+    height: 100px;
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 0 0 .05em .035em #c2c2c2;
+    background: #f2f2f2;
+    bottom: 21px;
+    left: 21px;
+    right: 21px;
+    padding: 5px 8px;
+}
+.block-buy h3 {
+    height: 28px;
+    line-height: 27px;
+    overflow: hidden;
+}
+.block-buy h3 .stock {
+    font-size: .9em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #1CDA1C;
+    text-align: left;
+}
+.block-buy h3 .vendu-et-expedie {
+    text-align:right;
+    padding-left: 85px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .75em;
+}
+.game-zone {
+    color: #0085b2!important;
+}
+.block-buy .prix-achat {
+    height: 62px;
+    padding: 10px 6px;
+    line-height: 38px;
+}
+.block-buy .prix {
+    font-family: 'montserrat', sans-serif;
+    font-size: 2em;
+    color: #3d3d3d;
+    position: relative;
+    float: left;
+    width: 152px;
+}
+.block-buy .prix span {
+    font-size: .5em;
+    display: inline-block;
+    top: -3px;
+    position: absolute;
+}
+.block-buy .achat {
+    float: left;
+    width: 300px;
+}
+.btn-achat {
+    display: inline-block;
+    padding: 0 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    left: 55px;
+    font-size: .85em;
+    font-weight: 400;
+    color: #fefefe;
+    border-radius: 4px;
+    box-shadow: 0 0 .1em #3d3d3d;
+    background: #0085b2;
+}
+.btn-achat:hover {
+    background: linear-gradient(to bottom, #0085b2, #056383);
+}
+/*  FIN PAGE PRODUCT_DETAILS  */

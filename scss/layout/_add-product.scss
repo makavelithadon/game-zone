@@ -1,0 +1,86 @@
+/*  PAGE AJOUT PRODUIT  */
+
+.cat-add-product, .rayon-add-product {    width: 250px;
+    height: 30px;
+    border-radius: 4px;
+    padding-left: 25px;
+    border: 1px solid transparent;
+    outline-offset: 0;
+    outline: 0;
+    background: #ECEAEA;
+    transition: border .3s, box-shadow .3s!important;
+}
+.cat-add-product:focus, .rayon-add-product:focus {
+    box-shadow: 0 0 .05em #0085B2;
+    border: 1px solid #0085B2;
+}
+.cat-add-product > option, .rayon-add-product > option {
+    padding-left: 25px;
+    line-height: 25px;
+}
+.textarea-product {
+    width: 340px;
+    height: 100px;
+    border: 1px solid transparent;
+    transition: border .3s, box-shadow .3s!important;
+}
+.textarea-product:focus {
+    box-shadow: 0 0 .05em #0085B2;
+    border: 1px solid #0085B2;
+}
+.form-container-block.textarea {
+    max-height: 140px;
+}
+.photo-actuelle {
+    height: 150px;
+    margin: 0 auto;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.form-container-block.image {
+    max-height: none;
+}
+.form-container-block.image h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #3d3d3d;
+    font-size: .85em;
+}
+#tableUser div, #tableUser iframe{
+	display: none!important;
+	width: 0!important;
+	opacity: 0!important;
+	visibility: hidden!important;
+}
+.table.comment {
+    font-size: .85em!important;
+    width: 98%;
+    max-width: 98%;
+}
+.table.comment th {
+    height: 30px!important;
+    max-height: 30px!important;
+    font-size: .75em!important;
+    padding: 0!important;
+}
+.table.comment tr {
+    height: 50px!important;
+    max-height: 50px!important;
+}
+.table.comment tr td {
+    height: 50px!important;
+    max-height: 50px!important;
+    font-size: .7em!important;
+}
+.table.comment tr td.article_nom {
+    line-height: 18px!important;
+    width: 110px!important;
+}
+.form-container.contact label, .form-container.contact input {
+    text-align: center;
+    display:block;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+/*  FIN PAGE AJOUT PRODUIT  */
